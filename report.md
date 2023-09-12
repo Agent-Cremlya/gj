@@ -5,3 +5,6 @@ SELECT * FROM person WHERE address='Tver'
 SELECT * FROM person WHERE address='Openok-city'
 ![image](https://github.com/Agent-Cremlya/gj/assets/67115483/3dbc9d27-3006-48c0-92c6-40dd8b4ad647)
 
+SELECT "id", "name", "gender", "address" FROM person Where gender='female' and address='Moscow'
+ORDER BY "name" ASC;
+![image](https://github.com/Agent-Cremlya/gj/assets/67115483/1931b806-cc43-4612-8862-d394709b65af)
