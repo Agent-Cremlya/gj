@@ -1,7 +1,7 @@
 ```
 SELECT * FROM Students
 ```
-https://sun9-43.userapi.com/impg/NARWn6xzi8dCCFwumv_AjhP2KkiSnOoZUZHPfA/c2A2Uox4AXg.jpg?size=527x368&quality=96&sign=84d347a3366364b4ef345d33b8eff14a&type=album
+![](https://sun9-43.userapi.com/impg/NARWn6xzi8dCCFwumv_AjhP2KkiSnOoZUZHPfA/c2A2Uox4AXg.jpg?size=527x368&quality=96&sign=84d347a3366364b4ef345d33b8eff14a&type=album)
 
 1)
 ```
