@@ -7,7 +7,7 @@ SELECT * FROM Students
 ```
 SELECT firstname, lastname FROM Students WHERE age > 21 
 ```
-![}(https://sun9-32.userapi.com/impg/pKspVsiXiM-Cc1fAV3VjsWHPtTyiysfdr6DZ4A/4ExSeerlcd4.jpg?size=347x313&quality=96&sign=1262d0a26f702595e9a0b06d97f1971c&type=album)
+![](https://sun9-32.userapi.com/impg/pKspVsiXiM-Cc1fAV3VjsWHPtTyiysfdr6DZ4A/4ExSeerlcd4.jpg?size=347x313&quality=96&sign=1262d0a26f702595e9a0b06d97f1971c&type=album)
 3)
 ```
 SELECT * FROM courses
