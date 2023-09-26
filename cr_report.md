@@ -8,3 +8,8 @@ https://sun9-32.userapi.com/impg/pKspVsiXiM-Cc1fAV3VjsWHPtTyiysfdr6DZ4A/4ExSeerl
 SELECT * FROM courses
 https://sun9-73.userapi.com/impg/PqQkqQbL1P76vZ2aVRGKpIhPILS-7Tew2zO0Nw/qKoyuq9ibwA.jpg?size=301x369&quality=96&sign=a53564b11462bd61902db15236a2a807&type=album
 4)
+SELECT s.firstname, s.lastname, c.coursename FROM students s
+JOIN studentcourses sc ON s.age = sc.studentid
+JOIN courses c ON sc.courseid = c.courseid
+WHERE c.coursename = 'Математика'
+dfs
