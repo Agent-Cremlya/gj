@@ -1,8 +1,11 @@
 1)
 SELECT * FROM Students
 https://sun9-43.userapi.com/impg/NARWn6xzi8dCCFwumv_AjhP2KkiSnOoZUZHPfA/c2A2Uox4AXg.jpg?size=527x368&quality=96&sign=84d347a3366364b4ef345d33b8eff14a&type=album
+
 2)
+```
 SELECT firstname, lastname FROM Students WHERE age > 21 
+```
 https://sun9-32.userapi.com/impg/pKspVsiXiM-Cc1fAV3VjsWHPtTyiysfdr6DZ4A/4ExSeerlcd4.jpg?size=347x313&quality=96&sign=1262d0a26f702595e9a0b06d97f1971c&type=album
 3)
 SELECT * FROM courses
