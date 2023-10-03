@@ -1,0 +1,30 @@
+-- insert into person values (31, 'Anton', 18, 'male', 'Openok-city');
+-- ввод записи таблицы с конкретными значениями
+
+-- Select — обозначение выбора запроса
+-- from — выбор среды
+-- where — условие
+-- пример: 
+-- SELECT student_name FROM Students WHERE Age > 21
+-- ORDER BY "name" ASC; требование ввода значения по алфавиту
+
+-- SELECT AVG(age) FROM students; — запрос на среднее значение 
+
+-- SELECT s.firstname, s.lastname, c.coursename FROM students s
+-- JOIN studentcourses sc ON s.age = sc.studentid
+-- JOIN courses c ON sc.courseid = c.courseid
+-- WHERE c.coursename = 'Математика'
+
+-- Краткое обозначение исходных таблиц (s — students, c — courses, sc — studentscourses), применение JOIN для
+-- подмножества данных с последущим нахождения искомого значения
+
+-- SELECT firstname, lastname FROM students WHERE NOT (studentid IN (SELECT studentid FROM studentcourses)) AND age > 18
+-- ограничение на неинтересуемые нас запросы
+
+
+-- SELECT c.coursename, COUNT(sc.studentid) as amount_students from courses c
+-- LEFT JOIN studentcourses sc ON c.courseid = sc.courseid 
+-- GROUP BY c.coursename — внешнее левое соединение 
+
+
+-- SELECT firstname, lastname FROM students WHERE age = (SELECT Max(Age) From Students) поиск максимального значения
