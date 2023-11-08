@@ -1,45 +1,75 @@
-create table seller
-( id bigint primary key ,
-  name varchar not null,
-  age integer,
-  gender varchar,
-  phone integer
-  );
-insert into person values (1, 'Vasya', 19, 'male', 84991132332);
-insert into person values (2, 'Andrey', 21, 'male', 98453456547);
-insert into person values (3, 'Denis', 14, 'male', 89992281488);
-insert into person values (4, 'Elvira', 22, 'female', 89119112001);
+create table brand(
+id bigint primery_key,
+tittle varchar(64) not null);
 
-CREATE TABLE Body_type
-( id bigint primary key,
-name varchar not full,);
+insert into brand values (1, 'Toyota')
+insert into brand values (2, 'Nissan')
+insert into brand values (3, 'Mitsubishi')
+insert into brand values (4, 'Subaru')
+insert into brand values (5, 'Honda')
 
-insert into Body_type values (1, 'Седан')
-insert into Body_type values (2, 'Хетч')
-insert into Body_type values (3, 'Купе')
-insert into Body_type values (4, 'Кабр')
 
-CREATE TABLE Models
-( id bigint primary key,
-name varchar);
 
-insert into Models values (1, 'Nissan Skyline')
-insert into Models values (2, 'Toyota Corolla II')
-insert into Models values (3, 'Toyota Celica')
-insert into Models values (4, 'Porshe Panamera')
 
-create table brand
-( id bigint primary key ,
-  tittle varchar,
-  body_id bigint not full,
-  owner_id bigint not full,
-  model_id bigint not full;
-  price int);
- constraint fk_body_id foreign key (body_id) references Body_type(id),
- constraint fk_owner_id foreign key  (owner_id) references seller(id),
- constraint fk_model_id foreign key  (model_id) references Models(id),
+
+
+
+create table publishments(
+	id BIGINT primery_key,
+	title VARCHAR(64) not null,
+	brand_id BIGINT not null,
+	model_id BIGINT not null,
+	price DOUBLE,
+	seller_id BIGINT not null,
+	body_type_id BIGINT not null,
+	vehicle_type_id BIGINT not null,
+	description TEXT,
+	constraint fk_brand_id foreign key  (brand_id) references brand(id),
+) 
+
+
+
+
+-- create table seller
+-- ( id bigint primary key ,
+--   name varchar not null,
+--   age integer,
+--   gender varchar,
+--   phone integer
+--   );
+-- insert into person values (1, 'Vasya', 19, 'male', 84991132332);
+-- insert into person values (2, 'Andrey', 21, 'male', 98453456547);
+-- insert into person values (3, 'Denis', 14, 'male', 89992281488);
+-- insert into person values (4, 'Elvira', 22, 'female', 89119112001);
+
+-- CREATE TABLE Body_type
+-- ( id bigint primary key,
+-- name varchar not null);
+
+-- insert into Body_type values (1, 'Седан');
+-- insert into Body_type values (2, 'Хетч');
+-- insert into Body_type values (3, 'Купе');
+-- insert into Body_type values (4, 'Кабр');
+
+-- CREATE TABLE Models
+-- ( id bigint primary key,
+-- name varchar);
+
+-- insert into Models values (1, 'Nissan Skyline');
+-- insert into Models values (2, 'Toyota Corolla II');
+-- insert into Models values (3, 'Toyota Celica');
+-- insert into Models values (4, 'Porshe Panamera');
+
+-- create table brand
+-- ( id bigint primary key ,
+--   tittle varchar
+--  );
+
+-- alter table brand add constraint fk_body_id foreign key (body_id) references Body_type(id),
+--  constraint fk_owner_id foreign key  (owner_id) references seller(id),
+--  constraint fk_model_id foreign key  (model_id) references Models(id),
  
- insert into brand values (1, 'Продам Nissan Skyline', 1, 1, 1, 1900000)
- insert into brand values (2, 'Продажа или обмен Тапка 2', 2, 2, 2, 140000)
- insert into brand values (3, 'Продам Боевую целику', 3, 3, 3, 350000)
- insert into brand values (4, 'Продажа Панамеры', 4, 4, 4, 9999999)
+--  insert into brand values (1, 'Продам Nissan Skyline', 1, 1, 1, 1900000);
+--  insert into brand values (2, 'Продажа или обмен Тапка 2', 2, 2, 2, 140000);
+--  insert into brand values (3, 'Продам Боевую целику', 3, 3, 3, 350000);
+--  insert into brand values (4, 'Продажа Панамеры', 4, 4, 4, 9999999);
